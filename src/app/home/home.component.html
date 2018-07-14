@@ -1,0 +1,47 @@
+<div >
+  <div >
+    <div >
+      <div style="
+    box-shadow: 0px 2px 20px -6px;
+    width: 301px;
+    padding: 6%;
+    margin: 7% auto;
+    background-color: #f3f3f5;
+    border-radius: 17px;
+    margin-left: 31%;
+">
+
+
+<div>
+
+        <span class="ui-float-label">
+         <input  id="uname" type="text" size="30"  [(ngModel)]="uname" pInputText>
+        <label for="uname">Username</label>
+        </span>
+
+
+</div>
+
+        <br><br>
+<div>
+
+        <span class="ui-float-label">
+        <input id="pwd" type="password" [(ngModel)]="password" size="30"  pInputText>
+        <label for="pwd">password</label>
+        </span>
+
+</div>
+    <br><br>
+
+        <div>
+
+
+          <p-button label="Login" (click)="login(uname,password)" style="padding-left: 33%"></p-button>
+
+</div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

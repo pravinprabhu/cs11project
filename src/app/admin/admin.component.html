@@ -1,0 +1,57 @@
+<br>
+<div style="float: right;">
+  <p-button routerLink="/signup" label="Create Staff" style="margin-right: 12px"></p-button>
+  <p-button routerLink="/login" label="Signout" ></p-button>
+</div>
+<br>
+<br>
+<hr>
+<div style="padding-left: 16%">
+<div >
+
+  <div>
+    <span style="padding-left: 25%">Product Id</span>
+    <input type="number" pInputText name="pid" style="margin-left: 30px"/>
+  </div>
+
+  <br>
+
+  <div>
+    <span style="padding-left: 25%" >Product Name</span>
+    <input type="text" pInputText name="pname" style="margin-left: 6px"/>
+  </div>
+
+  <br>
+
+  <div>
+    <span style="padding-left: 25%" >Cost</span>
+    <input type="number" pInputText name="cost" style="margin-left: 68px"/>
+  </div>
+
+  <br>
+
+  <div >
+    <span style="margin-left:  25% " >Tax </span>
+
+    <p-dropdown [options]="tax" ></p-dropdown>
+  </div>
+
+  <br>
+
+  <div style="padding-left: 28%">
+    <p-radioButton name="option" value="insert" label="Add Product"></p-radioButton>
+    <br><br>
+    <p-radioButton  name="option" value="delete" label="Delete Product" ></p-radioButton>
+  </div>
+
+  <br>
+
+  <div>
+
+    <p-button label="Ok" style="padding-left: 30%"></p-button>
+
+    <p-button label="Clear" style="padding-left: 5%"></p-button>
+  </div>
+
+</div>
+</div>

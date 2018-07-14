@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import {RadioButtonModule} from 'primeng/radiobutton';
 import { StaffComponent } from './staff/staff.component';
 import {TableModule} from 'primeng/table';
+import {DropdownModule} from 'primeng/dropdown';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,15 @@ import {TableModule} from 'primeng/table';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     ButtonModule,
     InputTextModule,
     CheckboxModule,
     AppRoutingModule,
     RadioButtonModule,
-    TableModule
+    TableModule,
+    DropdownModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

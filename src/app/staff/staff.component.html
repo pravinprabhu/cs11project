@@ -1,0 +1,104 @@
+<br><div style="float: right;">
+  <p-button routerLink="/login" label="Signout" ></p-button>
+</div>
+<br><br><hr>
+<div style=" width:50%;
+    display:block;
+    float: left;">
+  <div><span style="font-family: Candara">Search</span>
+    <input type="text" pInputText />
+  </div>
+
+  <br>
+  <div style="margin-right: 24px;
+    margin-left: 14px; ">
+    <!--<p-table >-->
+      <!--<ng-template pTemplate="header">-->
+      <!--<tr>-->
+        <!--<th>Id</th>-->
+        <!--<th>Name</th>-->
+        <!--<th>Price(Rs)</th>-->
+
+      <!--</tr>-->
+      <!--</ng-template >-->
+
+      <!--<ng-template pTemplate="body">-->
+      <!--<tr>-->
+        <!--<td>1</td>-->
+        <!--<td>pen</td>-->
+        <!--<td>15</td>-->
+
+        <!--<td bgcolor="black"> <input type="text" pInputText /></td>-->
+      <!--</tr>-->
+      <!--</ng-template>-->
+    <!--</p-table>-->
+    <p-table [value]="sales">
+      <ng-template pTemplate="header">
+        <tr>
+          <th >
+            Brand
+          </th>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-sales>
+        <tr *ngFor="let col of sales">
+          <td >
+            {{col.brand}}
+          </td> <td >
+          {{col.name}}
+        </td> <td >
+          {{col.rate}}
+        </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>
+
+
+
+<div  style=" width:50%;
+    display:block;
+    float: right;
+    border-left: 4px solid black;
+    height: 494px;
+margin-top: -80px;
+margin-left: 12px">
+
+  <div >
+    <p-table >
+      <ng-template pTemplate="header">
+        <tr>
+        <th>Product</th>
+        <th>Quanity</th>
+        <th>Tax(%)</th>
+        <th>Price</th>
+      </tr>
+      </ng-template>
+      <ng-template pTemplate="body">
+      <tr>
+        <td>pen</td>
+        <td></td>
+        <td>15</td>
+        <td>0</td>
+      </tr>
+      </ng-template>
+    </p-table>
+
+  </div>
+  <br>
+  <div >
+    <span style="font-family: Candara;margin-left: 2%">Total</span>
+    <input type="number" pInputText />
+  </div>
+  <br>
+  <div style="margin-left: 2%">
+    <p-button  label="Print Invoice"></p-button>
+    <p-button  label="Clear" style="margin-left: 12px"></p-button>
+
+
+  </div>
+
+</div>
