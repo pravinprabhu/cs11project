@@ -12,26 +12,7 @@
   <br>
   <div style="margin-right: 24px;
     margin-left: 14px; ">
-    <!--<p-table >-->
-      <!--<ng-template pTemplate="header">-->
-      <!--<tr>-->
-        <!--<th>Id</th>-->
-        <!--<th>Name</th>-->
-        <!--<th>Price(Rs)</th>-->
 
-      <!--</tr>-->
-      <!--</ng-template >-->
-
-      <!--<ng-template pTemplate="body">-->
-      <!--<tr>-->
-        <!--<td>1</td>-->
-        <!--<td>pen</td>-->
-        <!--<td>15</td>-->
-
-        <!--<td bgcolor="black"> <input type="text" pInputText /></td>-->
-      <!--</tr>-->
-      <!--</ng-template>-->
-    <!--</p-table>-->
     <p-table [value]="sales">
       <ng-template pTemplate="header">
         <tr>
@@ -42,7 +23,7 @@
           <th>Price</th>
         </tr>
       </ng-template>
-      <ng-template pTemplate="body" let-sales>
+      <ng-template pTemplate="body" >
         <tr *ngFor="let col of sales">
           <td >
             {{col.brand}}
