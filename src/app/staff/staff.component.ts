@@ -16,7 +16,7 @@ interface City {
 
 export class StaffComponent implements OnInit {
  sales = [];
- // cols =  any[];
+
 
   constructor() { }
 
